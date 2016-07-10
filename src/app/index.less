@@ -1,0 +1,244 @@
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  less dependencies when defined in the bower.json of your dependencies
+ */
+// bower:less
+// endbower
+
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap/less/variables.less
+ */
+// Height variables (appears count calculates by raw css)
+
+@grey: #8b8b8b;
+@grey-light: #f3f3f3;
+@red-hull-dark: #8e3440;
+
+body {
+  font-family: "Proxima N W01 Reg", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Bembo W01","Times New Roman";
+  span {
+
+      font-size: 28px;
+  }
+
+}
+
+h3 {
+  font-family: "Bembo W01","Times New Roman";
+}
+
+img:focus {
+  outline:none;
+}
+
+.grey {
+    color: @grey;
+}
+
+.greyed-container {
+  background-color: @grey-light;
+}
+
+.simple-btn-gradient {
+  color:white;
+  background-image: linear-gradient(90deg, #872c47, #bf4971);
+  &:hover,&:focus {
+    color:@grey;
+  }
+}
+
+
+
+.rotation-block {
+
+
+
+
+  img {
+    width:100%;
+
+    &:focus {
+      border: none;
+    }
+
+  }
+
+  .link {
+    cursor:pointer;
+  }
+
+  .header {
+    background-color: @grey;
+    color:white;
+    font-size:18px;
+    padding:8px;
+  }
+
+  .empty {
+    border-left:2px dashed @grey;
+    border-right:2px dashed @grey;
+    border-bottom:2px dashed @grey;
+  }
+
+}
+
+.rotation-neg {
+  border:none;
+  background-color: @red-hull-dark;
+  color:white;
+
+  a {
+    color:white;
+    font-size:18px;
+    text-decoration: none;
+    cursor:pointer;
+    &:focus,&:hover,&:active {
+      color:@grey-light;
+      text-decoration: none;
+    }
+  }
+}
+
+.rotation-cell {
+  width:262px;
+  height:43px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 262px 43px;
+  cursor:pointer;
+
+  img {
+    width:100%
+  }
+
+}
+
+.cell-rotation {
+
+  max-width: 300px;
+  border-bottom:10px;
+
+  img {
+    width:100%
+  }
+}
+
+.bg-quad-london {
+  background-image: url(../assets/images/quads/quad_london.png);
+}
+
+.bg-quad-ashridge {
+  background-image: url(../assets/images/quads/quad_ashridge.png);
+}
+
+.bg-quad-dubai {
+  background-image: url(../assets/images/quads/quad_dubai.png);
+}
+
+.bg-quad-boston {
+  background-image: url(../assets/images/quads/quad_boston.png);
+}
+
+.bg-quad-newyork {
+  background-image: url(../assets/images/quads/quad_newyork.png);
+}
+
+.bg-quad-none {
+  background-image: url(../assets/images/quads/quad_none.png);
+}
+
+.bg-quad-sf {
+  background-image: url(../assets/images/quads/quad_sf.png);
+}
+
+.bg-quad-shanghai {
+  background-image: url(../assets/images/quads/quad_shanghai.png);
+}
+
+.rotation-bg-0 {
+  background-color:#1a82b3 !important;
+}
+
+.rotation-bg-1 {
+  background-color:#b32c1a !important;
+}
+
+.rotation-bg-2 {
+  background-color:#8d333f !important;
+}
+
+.rotation-bg-3 {
+  background-color:#305935 !important;
+}
+
+.rotation-bg-4 {
+  background-color:#338d81 !important;
+}
+
+.rotation-bg-5 {
+  background-color:#ff6000 !important;
+}
+.rotation-bg-6 {
+  background-color:#94d600 !important;
+}
+.rotation-bg-7 {
+  background-color:#8b8b8b !important;
+}
+
+footer {
+
+}
+
+/* boostrap override */
+
+.modal-content {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+
+.modal-body {
+  overflow-y: auto;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+
+  .modal-dialog {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .modal-content {
+    height: 100%;
+    min-height: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .rotation-copy {
+    padding:16px;
+    background-color: #f6ece2;
+
+    h1 {
+      margin-top:0px;
+    }
+
+  }
+}
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your less files automatically
+ */
+// injector
+// endinjector
